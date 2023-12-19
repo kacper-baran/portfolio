@@ -1,0 +1,26 @@
+@import './base.css';
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+}
+
+section {
+  min-height: 100vh
+}
+
+a {
+  color: var(--color-text);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-text-accent);
+}
+
+h1,h2,h3 {
+  color: var(--color-heading);
+  
+}
