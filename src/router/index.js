@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+const ProjectDetails = () => import('../components/ProjectDetails.vue')
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   scrollBehavior(to, _2, savedPosition) {
@@ -20,6 +20,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/:projectId',
+      props: true,
+      component: ProjectDetails
     }
   ]
 })

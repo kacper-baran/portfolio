@@ -3,7 +3,7 @@
     <div class="wrapper">
       <p>Copyright &copy; 2023. All rights are reserved</p>
       <div class="socials">
-        <a href="">
+        <a href="https://github.com/kacper-baran" target="_blank">
           <IconBrandGithub stroke-width="1.5" size="40"></IconBrandGithub>
         </a>
         <a href=""> <IconBrandLinkedin stroke-width="1.5" size="40"></IconBrandLinkedin></a>
@@ -28,7 +28,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding-block: 2rem;
   gap: 2em;
 }

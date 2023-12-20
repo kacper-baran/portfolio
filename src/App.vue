@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import TheNav from './components/TheNav.vue'
+import TheFooter from './components/TheFooter.vue'
 
 import TheBlob from './components/TheBlob.vue'
 const blob = ref(null)
@@ -25,7 +27,9 @@ window.onpointermove = (event) => {
     </div>
   </div>
   <div class="content">
+    <TheNav></TheNav>
     <router-view></router-view>
+    <TheFooter />
   </div>
 </template>
 
