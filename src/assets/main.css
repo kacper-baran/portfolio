@@ -8,7 +8,7 @@
 }
 
 section {
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 a {
@@ -20,7 +20,8 @@ a:hover {
   color: var(--color-text-accent);
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   color: var(--color-heading);
-  
 }

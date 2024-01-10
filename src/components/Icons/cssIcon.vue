@@ -22,7 +22,6 @@ export default {}
 <style scoped>
 svg {
   max-height: 100%;
-
 }
 div {
   display: flex;
