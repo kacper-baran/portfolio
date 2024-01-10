@@ -3,72 +3,99 @@
     <div class="wrapper">
       <h2>Projects</h2>
       <div class="project-card">
-        <div class="img"></div>
+        <div class="img">
+          <img src="/src/assets/img/booker-full.png" alt="" />
+          <img src="/src/assets/img/booker/img2.png" alt="" />
+          <p>After Login or Sign up</p>
+          <img src="/src/assets/img/booker/img3.png" alt="" />
+          <img src="/src/assets/img/booker/img4.png" alt="" />
+          <img src="/src/assets/img/booker/img5.png" alt="" />
+          <img src="/src/assets/img/booker/img6.png" alt="" />
+          <img src="/src/assets/img/booker/img7.png" alt="" />
+        </div>
         <div class="project-card__content">
           <h3>Booker</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui facere sequi
-            eaque velit neque alias iure optio libero nesciunt!
+            Booker is a web app for simplified book summary tracking. Featuring a clean landing page
+            with a dark theme available. This web app utilizes firebase authetication to allow user
+            to sign up or login. Inside the app you can read book summaries, add to saved list of
+            books or create new Book summaries that other users can read. All of the data for each
+            summary is loaded from firebase real-time data base.
           </p>
-          <div>
-            <span>Vue </span>
-            <span>SASS</span>
+          <div class="tech">
+            <span><sassIcon></sassIcon></span>
+            <span><vueIcon></vueIcon></span>
           </div>
-          <div>
+          <div class="links">
             <a href="https://kacper-baran.github.io/book-summary-website/" target="_blank"
-              >Live Demo
+              ><IconLink></IconLink>Live Demo
             </a>
-            <a href="https://github.com/kacper-baran/book-summary-website" target="_blank">Code</a>
+            <a href="https://github.com/kacper-baran/book-summary-website" target="_blank"
+              ><IconBrandGithub></IconBrandGithub>Code</a
+            >
           </div>
-          <router-link to="/booker" class="show-more">Show more...</router-link>
         </div>
       </div>
       <div class="project-card">
-        <div class="img"></div>
+        <div class="img">
+          <img src="/src/assets/img/crypto-full.png" alt="" />
+        </div>
         <div class="project-card__content">
           <h3>CryptoHub: Crypto Currencies api website</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui facere sequi
-            eaque velit neque alias iure optio libero nesciunt!
+            CryptoHub is website that allows to see trending crypto currencies thanks to a third
+            party API CoinGecko that allow getting latest data. History of each coin is available in
+            clean graphs that were built with grapJS.
           </p>
-          <div>
-            <span>Vue </span>
-            <span>SASS</span>
+          <div class="tech">
+            <span><cssIcon></cssIcon></span>
+            <span><vueIcon></vueIcon></span>
           </div>
-          <div>
+          <div class="links">
             <a href="https://kacper-baran.github.io/crypto-currency-app/" target="_blank"
-              >🔗 Live Demo
+              ><IconLink></IconLink>Live Demo
             </a>
-            <a href="https://github.com/kacper-baran/crypto-currency-app" target="_blank">Code</a>
+            <a href="https://github.com/kacper-baran/guitar-ecommerce-webiste" target="_blank"
+              ><IconBrandGithub></IconBrandGithub>Code</a
+            >
           </div>
-          <router-link to="/cryptohub" class="show-more">Show more...</router-link>
         </div>
       </div>
 
       <div class="project-card">
-        <div class="img"></div>
+        <div class="img">
+          <img src="/src/assets/img/guitar-shop-full3.png" alt="" />
+        </div>
         <div class="project-card__content">
-          <h3>Booker</h3>
+          <h3>Guitar e-commerce website</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui facere sequi
-            eaque velit neque alias iure optio libero nesciunt!
+            E-commerce website built with Vue. In this project I tried to create interesting and
+            captivating designs with inspiriation from dribble.com
           </p>
-          <div>
-            <span>Vue </span>
-            <span>SASS</span>
+          <div class="tech">
+            <span><sassIcon></sassIcon></span>
+            <span><vueIcon></vueIcon></span>
           </div>
-          <div>
-            <a href="">Live Demo </a>
-            <a href="">Code</a>
+          <div class="links">
+            <a href="https://kacper-baran.github.io/guitar-ecommerce-webiste/" target="_blank">
+              <IconLink></IconLink> Live Demo
+            </a>
+            <a href="https://github.com/kacper-baran/guitar-ecommerce-webiste" target="_blank"
+              ><IconBrandGithub></IconBrandGithub> Code</a
+            >
           </div>
-          <a class="show-more" href="">Show more...</a>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<script></script>
+<script setup>
+import { IconBrandGithub, IconLink } from '@tabler/icons-vue'
+import cssIcon from './Icons/cssIcon.vue'
+import vueIcon from './Icons/vueIcon.vue'
+import sassIcon from './Icons/sassIcon.vue'
+</script>
 
 <style scoped>
 .wrapper {
@@ -78,14 +105,23 @@
   padding-block: 5em;
 }
 
+h2 {
+  font-size: clamp(2rem, 9vw, 3rem);
+}
+
+.border {
+  border: 1px solid white;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  gap: 1em;
-  max-width: 900px;
+  gap: 1rem;
+  max-width: 1100px;
+  width: 100%;
   background-color: var(--color-background-mute);
   padding: 1em;
   border-radius: 6px;
@@ -96,22 +132,47 @@ h3 {
 .project-card__content {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  gap: 1.4rem;
+}
 
-  gap: 1em;
+.tech {
+  display: flex;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+}
+.links a {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .img {
+  display: grid;
+  place-items: center;
   width: 100%;
-  height: 300px;
+  max-height: 350px;
   border-radius: 6px;
-  background-color: #ffffff0f;
+  overflow: scroll;
+  box-shadow: 0 0 120px -70px aquamarine;
 }
+img {
+}
+
 .show-more {
   color: var(--color-text-accent);
 }
 @media (min-width: 768px) {
   .project-card {
     flex-direction: row;
+  }
+  .img {
+    width: 80%;
   }
 }
 </style>

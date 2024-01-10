@@ -1,20 +1,18 @@
 <template>
   <section class="wrapper" id="about">
     <div>
-      <img src="../assets/baran-small.png" alt="skull of a ram" />
+      <img src="../assets/img/app.jpeg" alt="coffee with a macbook" />
     </div>
     <div>
-      <h2>About me</h2>
+      <h2>About me 🐏</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quam atque harum unde
-        reprehenderit! Tempore in nulla temporibus architecto quos, sequi quo nostrum quidem
-        sapiente, molestias, nesciunt asperiores? Similique velit commodi iure voluptatem ratione!
-        In, sunt ut. Itaque at, cum dolorum magni odit impedit velit ullam saepe. Quia modi quod,
-        dolor tenetur adipisci mollitia consectetur cupiditate unde, odit repellendus nulla? Amet
-        quaerat optio alias praesentium perferendis, illum esse culpa consequuntur officia
-        repellendus a rem rerum veritatis aperiam maiores dolorum. Praesentium incidunt atque
-        aspernatur velit maiores laboriosam sint. Ad quaerat unde inventore eligendi eos, saepe
-        dignissimos incidunt modi labore, rem animi!
+        Hey, I'm Kacper Baran, a front-end developer from Poland. I'm on a mission to bring digital
+        experiences to life. With a deep appreciation for design aesthetics and a knack for the
+        latest technologies, I specialize in creating websites that not only function seamlessly but
+        also captivate users visually. Whether I'm translating creative concepts into code or
+        optimizing user journeys, I'm committed to pushing the boundaries of front-end development.
+        Plus, I thrive in collaborative environments—I work well in teams and believe that the best
+        results come from collective effort.
       </p>
     </div>
   </section>
@@ -30,14 +28,20 @@ section {
   gap: 2em;
 }
 
+h2 {
+  font-weight: 700;
+}
+
 div:has(img) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffffff0f;
-  padding: 1em;
+  min-height: 400px;
+}
+
+img {
   border-radius: 6px;
-  height: 400px;
+  box-shadow: 0 0 120px -50px aquamarine;
 }
 
 @media (min-width: 768px) {

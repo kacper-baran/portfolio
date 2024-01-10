@@ -7,16 +7,13 @@
           <IconBrandGithub stroke-width="1.5" size="40"></IconBrandGithub>
         </a>
         <a href=""> <IconBrandLinkedin stroke-width="1.5" size="40"></IconBrandLinkedin></a>
-        <a href="">
-          <IconBrandInstagram stroke-width="1.5" size="40"></IconBrandInstagram>
-        </a>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup>
-import { IconBrandGithub, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-vue'
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-vue'
 </script>
 
 <style scoped>

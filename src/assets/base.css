@@ -4,22 +4,12 @@
   --c-white-mute: #f2f2f2;
 
   --c-black: hsl(0, 0%, 9%);
-  --c-black-soft: #222222e8;
   --c-black-mute: #28282856;
-  --c-black-ad: #609b7b;
 
-  --c-indigo: #2c5045;
   --c-aquamarine: hsl(166, 79%, 44%);
 
-  --c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --c-divider-dark-2: rgba(84, 84, 84, 0.48);
-
-  --c-text-light-1: var(--c-indigo);
-  --c-text-light-2: rgba(60, 60, 60, 0.66);
   --c-text-dark-1: var(--c-white);
-  --c-text-dark-2: rgba(235, 235, 235, 0.74);
+  --c-text-dark-2: rgba(225, 225, 225, 0.9);
 }
 
 /* semantic color variables for this project */
@@ -29,9 +19,6 @@
   --color-background-mute: var(--c-black-mute);
 
   --blob-color: var(--c-aquamarine);
-
-  --color-border: var(--c-divider-dark-2);
-  --color-border-hover: var(--c-divider-dark-1);
 
   --color-heading: var(--c-text-dark-1);
   --color-text: var(--c-text-dark-2);
@@ -66,8 +53,11 @@ body {
   height: 100%;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
 }
 
 a {

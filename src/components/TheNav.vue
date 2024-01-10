@@ -1,18 +1,7 @@
 <template>
-  <!-- <nav>
-    <div class="wrapper">
-      <div>KBdev</div>
-      <ul>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-    </div>
-  </nav> -->
   <nav id="navbar">
     <div class="container wrapper">
-      <div>KBdev</div>
+      <div>KB.dev</div>
       <ul class="menu" :class="{ menuActive: menuActive }">
         <li>
           <router-link class="nav-link" @click="closeMenu" :to="{ name: 'home' }">
@@ -34,11 +23,7 @@
           </router-link>
         </li>
         <li>
-          <router-link
-            class="nav-link"
-            @click="closeMenu"
-            :to="{ name: 'home', hash: '#contact' }"
-          >
+          <router-link class="nav-link" @click="closeMenu" :to="{ name: 'home', hash: '#contact' }">
             Contact
           </router-link>
         </li>
@@ -78,7 +63,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--color-background-soft);
+  background-color: var(--color-background);
   z-index: 10;
   padding: 0.5em;
 }
@@ -124,6 +109,7 @@ nav {
   background-color: transparent;
   padding: 1em;
   width: 40px;
+  height: 30px;
   z-index: 1000;
 }
 
@@ -148,20 +134,22 @@ nav {
 
 .hamburger.active .hamburger-item:first-child,
 .hamburger.active .hamburger-item:last-child {
-  right: 0;
-  width: 90%;
+  right: -15px;
+  width: 59%;
 }
 
 .hamburger.active .hamburger-item:first-child {
+  top: 6px;
   rotate: -135deg;
 }
 .hamburger.active .hamburger-item:last-child {
+  bottom: 6px;
   rotate: 135deg;
 }
 
 .hamburger.active .hamburger-item:nth-child(2) {
-  left: 0;
   width: 85%;
+  left: 14px;
 }
 .nav-link {
   padding: 1em;
