@@ -1,0 +1,1 @@
+import{_ as o,o as c,c as s,t as a}from"./index-zwqhWrdV.js";const r={class:"container"},n={__name:"ProjectDetails",props:["projectId"],setup(t){const e=t;return(p,_)=>(c(),s("div",r,a(e.projectId),1))}},i=o(n,[["__scopeId","data-v-8fedcd1e"]]);export{i as default};
